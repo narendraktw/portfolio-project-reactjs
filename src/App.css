@@ -347,8 +347,8 @@ nav ul li {
   position: absolute;
   opacity: 0;
   background: var(--primary-black);
-  width: 15rem;
-  height: 8rem;
+  width: 100%;
+  height: 100%;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
