@@ -322,7 +322,7 @@ nav ul li {
 /************************ PORTFOLIO *********************************/
 .portfolio-wrapper {
   background: var(--primary-light-grey);
-  padding-bottom: 3rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .portfolio-wrapper h1 {
@@ -330,7 +330,7 @@ nav ul li {
 }
 
 .portfolio-image {
-  width: 15rem;
+  width: 100%;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5rem;
 }
@@ -338,8 +338,8 @@ nav ul li {
 .portfolio-image-box {
   position: relative;
   margin: 1rem;
-  width: 20% !important;
-  padding: 0 0 2rem 0 !important;
+  /* width: 20% !important; */
+  /* padding: 0 0 2rem 0 !important; */
 }
 
 /*------------ OVERFLOW BOX ------------------*/

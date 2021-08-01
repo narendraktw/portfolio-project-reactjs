@@ -10,7 +10,7 @@ import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
-const Pofrfolio = () => {
+const Portfolio = () => {
   // Netflix
   const openPopupboxNetflix = () => {
     const content = (
@@ -200,50 +200,64 @@ const Pofrfolio = () => {
 
   return (
     <div id="portfolio" className="portfolio-wrapper">
+      <h1 className="text-uppercase text-center py-5">portfolio</h1>
       <div className="container">
-        <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
-            <img
-              className="portfolio-image"
-              src={netflix}
-              alt="Netflix Clone Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
+              <img
+                className="portfolio-image"
+                src={netflix}
+                alt="Netflix Clone Project..."
+              />
+              <div className="overflow"></div>
+              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            </div>
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
-            <img
-              className="portfolio-image"
-              src={cityGuide}
-              alt="City Guide Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          <div className="col-lg-3 col-md-6 col-sm-6">
+            <div
+              className="portfolio-image-box"
+              onClick={openPopupboxCityGuide}
+            >
+              <img
+                className="portfolio-image"
+                src={cityGuide}
+                alt="City Guide Project..."
+              />
+              <div className="overflow"></div>
+              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            </div>
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
-            <img
-              className="portfolio-image"
-              src={portfolio}
-              alt="Portfolio React and Material UI Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          <div className="col-lg-3 col-md-6 col-sm-6">
+            <div
+              className="portfolio-image-box"
+              onClick={openPopupboxPortfolio}
+            >
+              <img
+                className="portfolio-image"
+                src={portfolio}
+                alt="Portfolio React and Material UI Project..."
+              />
+              <div className="overflow"></div>
+              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            </div>
           </div>
           {/* - */}
-          <div
-            className="portfolio-image-box"
-            onClick={openPopupboxTaskManager}
-          >
-            <img
-              className="portfolio-image"
-              src={taskManager}
-              alt="Task Manager React and Redux Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          <div className="col-lg-3 col-md-6 col-sm-6">
+            <div
+              className="portfolio-image-box"
+              onClick={openPopupboxTaskManager}
+            >
+              <img
+                className="portfolio-image"
+                src={taskManager}
+                alt="Task Manager React and Redux Project..."
+              />
+              <div className="overflow"></div>
+              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            </div>
           </div>
         </div>
       </div>
@@ -255,4 +269,4 @@ const Pofrfolio = () => {
   );
 };
 
-export default Pofrfolio;
+export default Portfolio;
