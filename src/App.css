@@ -488,7 +488,7 @@ nav ul li {
 /************************ CONTACTS COMPONENT *********************************/
 .contacts {
   background: var(--primary-dark);
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .contacts h1 {
@@ -520,7 +520,7 @@ nav ul li {
 }
 
 .contacts .container {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .contacts input:focus,
