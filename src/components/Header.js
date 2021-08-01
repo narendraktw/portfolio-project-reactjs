@@ -13,8 +13,8 @@ const Header = () => {
           strings={[
             "Web Design",
             "Web Development",
-            "Facebook Ads SMM",
-            "Google Ads",
+            "Full Stack Development",
+            "Cloud Services",
           ]}
           typeSpeed={40}
           backSpeed={60}
