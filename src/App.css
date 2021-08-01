@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-body {
-  font-family: "Roboto Condensed", sans-serif !important;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+/**/
 :root {
   --primary-white: #ffffff;
   --primary-light-grey: #f4f4f4;
@@ -17,17 +14,24 @@ body {
   --primary-green: green;
 }
 
-/**************** NAVBAR ***************/
+body {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+/************************ NAVBAR *********************************/
+
+nav {
+  z-index: 2;
+}
+
 .logo {
   width: 16.25rem;
 }
 
-/*************** MENU LINKS ***********/
-nav {
-  z-index: 2;
-}
+/*----- MENU LINKS --------*/
 nav a.nav-link {
-  letter-spacing: 0.0375 rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 
@@ -44,17 +48,12 @@ nav ul li {
 
 .navbar-brand {
   max-width: 17.25rem;
-  padding: 0 auto !important;
+  padding: 0 !important;
   height: 6rem !important;
 }
 
-.navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
-}
-
-.navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-orange);
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 
 @media (max-width: 768px) {
@@ -63,32 +62,48 @@ nav ul li {
   }
 }
 
-/**************** HEADER ***************/
-.header-wrapper {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/************************ HEADER *********************************/
+
+.header-wraper {
   position: relative;
-  background: url("./assets/images/background.jpg") no-repeat center
-    center/cover;
-  height: 90vh;
+  background: url(./assets/images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .main-info {
   display: flex;
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto Condesed", sans-serif;
   z-index: 1;
 }
 
 .main-info h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
+}
+
+/*-------- TYPED TEXT ---------------*/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
 }
 
 @media (max-width: 768px) {
@@ -100,12 +115,7 @@ nav ul li {
   }
 }
 
-/**************** TYPED TEXT ***************/
-.typed-text {
-  font-size: 2rem;
-  color: var(--primary-white);
-}
-
+/*-------- HEADER MAIN OFFER BUTTON ---------------*/
 .btn-main-offer {
   border: 1px solid var(--primary-red);
   text-transform: uppercase;
@@ -121,9 +131,10 @@ nav ul li {
   background-color: var(--primary-hover-red);
   color: var(--primary-white);
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-/**************** PARTICLES JS **************/
+/*-------- PARTICLES JS ---------------*/
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
@@ -145,9 +156,9 @@ nav ul li {
 }
 
 .profile-img {
-  width: 17rem;
+  width: 16rem;
   border-radius: 50%;
-  padding: 0.1rem;
+  padding: 0.3rem;
   border: 1px solid var(--primary-orange);
 }
 
@@ -311,7 +322,7 @@ nav ul li {
 /************************ PORTFOLIO *********************************/
 .portfolio-wrapper {
   background: var(--primary-light-grey);
-  padding: 3rem 0;
+  padding-bottom: 3rem 0;
 }
 
 .portfolio-wrapper h1 {
@@ -327,6 +338,8 @@ nav ul li {
 .portfolio-image-box {
   position: relative;
   margin: 1rem;
+  width: 20% !important;
+  padding: 0 0 2rem 0 !important;
 }
 
 /*------------ OVERFLOW BOX ------------------*/
