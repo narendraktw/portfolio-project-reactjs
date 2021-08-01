@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -27,18 +28,59 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Home</a>
-                <br />
-                <a className="footer-nav">About me</a>
-                <br />
-                <a className="footer-nav">Services</a>
+                <Link
+                  smooth={true}
+                  to="home"
+                  className="nav-link-footer"
+                  href="#"
+                >
+                  Home <span className="sr-only">(current)</span>
+                </Link>
+
+                <Link
+                  smooth={true}
+                  to="about"
+                  offset={-110}
+                  className="nav-link-footer"
+                >
+                  about me
+                </Link>
+
+                <Link
+                  smooth={true}
+                  to="services"
+                  offset={-110}
+                  className="nav-link-footer"
+                  href="#"
+                >
+                  services
+                </Link>
               </div>
               <div className="col">
-                <a className="footer-nav">Experience</a>
-                <br />
-                <a className="footer-nav">Portfolio</a>
-                <br />
-                <a className="footer-nav">Contacts</a>
+                <Link
+                  smooth={true}
+                  to="experience"
+                  offset={-110}
+                  className="nav-link-footer"
+                >
+                  experience
+                </Link>
+                <Link
+                  smooth={true}
+                  to="portfolio"
+                  offset={-110}
+                  className="nav-link-footer"
+                >
+                  portfolio
+                </Link>
+                <Link
+                  smooth={true}
+                  to="contacts"
+                  offset={-110}
+                  className="nav-link-footer"
+                >
+                  contacts
+                </Link>
               </div>
             </div>
           </div>
@@ -71,7 +113,7 @@ const Footer = () => {
             </div>
             <p className="pt-3 text-center">
               Copyright&copy;
-              {new Date().getFullYear()}&nbsp;New Horizon | All Rights Reserved
+              {new Date().getFullYear()}&nbsp;| All Rights Reserved
             </p>
           </div>
         </div>

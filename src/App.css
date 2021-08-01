@@ -29,6 +29,9 @@ nav {
 }
 
 /*----- MENU LINKS --------*/
+.nav-link-footer {
+  display: block;
+}
 nav a.nav-link {
   font-size: 0.8rem;
   letter-spacing: 0.0375rem;
