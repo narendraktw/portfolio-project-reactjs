@@ -114,7 +114,7 @@ nav ul li {
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);
-  color: var var(--primary-white);
+  color: var(--primary-white);
   transition: 0.2s ease-in-out;
 }
 
