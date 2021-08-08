@@ -11,6 +11,40 @@ import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
+  const projectDetails = [
+    {
+      name: "Letter Automation Tool (LAT)",
+      description:
+        "The Letter Automation Tool (LAT) will serve as MHK’s formal method of receiving delivery of a client’s letter templates inventory, the tool will also auto tag the imported documents and hyper-automate correspondence configuration.  This streamline approach will save time through the reduction of manual analysis and improve quality through the reduction of configuration errors.",
+      technology: "ReactJs, Redux, ES6, HTML5, Material UI, Sass",
+      demoLink: "",
+      githubLink: "",
+      client: "MHK CareProminence",
+      images: [
+        require("../assets/images/project/LAT/img1.jpg"),
+        "../assets/images/project/LAT/img2.jpg",
+        "../assets/images/project/LAT/img3.jpg",
+        "../assets/images/project/LAT/img4.jpg",
+        "../assets/images/project/LAT/img5.jpg",
+      ],
+    },
+    {
+      name: "MHK Care Prominence Configuration Management Tool",
+      description:
+        "The Letter Automation Tool (LAT) will serve as MHK’s formal method of receiving delivery of a client’s letter templates inventory, the tool will also auto tag the imported documents and hyper-automate correspondence configuration.  This streamline approach will save time through the reduction of manual analysis and improve quality through the reduction of configuration errors.",
+      technology: "ReactJs, Redux, ES6, HTML5, Material UI, Sass",
+      demoLink: "",
+      githubLink: "",
+      client: "MHK CareProminence",
+      images: [
+        "../assets/images/project/LAT/img1.jpg",
+        "../assets/images/project/LAT/img2.jpg",
+        "../assets/images/project/LAT/img3.jpg",
+        "../assets/images/project/LAT/img4.jpg",
+        "../assets/images/project/LAT/img5.jpg",
+      ],
+    },
+  ];
   // Netflix
   const openPopupboxNetflix = () => {
     const content = (
@@ -26,6 +60,7 @@ const Portfolio = () => {
         </p>
         <b>GitHub:</b>{" "}
         <a
+          href
           className="hyper-link"
           onClick={() =>
             window.open("https://github.com/8020Coding/netflix-project")
@@ -62,7 +97,7 @@ const Portfolio = () => {
         </p>
         <b>Demo:</b>{" "}
         <a
-          //href=""
+          href
           className="hyper-link"
           onClick={() =>
             window.open(
@@ -76,6 +111,7 @@ const Portfolio = () => {
         <br />
         <b>GitHub:</b>{" "}
         <a
+          href
           className="hyper-link"
           onClick={() =>
             window.open(
@@ -115,6 +151,7 @@ const Portfolio = () => {
         </p>
         <b>Demo:</b>{" "}
         <a
+          href
           className="hyper-link"
           onClick={() =>
             window.open(
@@ -128,6 +165,7 @@ const Portfolio = () => {
         <br />
         <b>GitHub:</b>{" "}
         <a
+          href
           className="hyper-link"
           onClick={() =>
             window.open("https://github.com/8020Coding/portfilio", "_blank")
@@ -165,6 +203,7 @@ const Portfolio = () => {
         <b>Demo:</b>{" "}
         <a
           className="hyper-link"
+          href
           onClick={() =>
             window.open(
               "https://react-redux-task-manager.herokuapp.com/",
@@ -177,6 +216,7 @@ const Portfolio = () => {
         <br />
         <b>GitHub:</b>{" "}
         <a
+          href
           className="hyper-link"
           onClick={() =>
             window.open("https://github.com/8020Coding/task-manager", "_blank")
@@ -203,62 +243,27 @@ const Portfolio = () => {
       <h1 className="text-uppercase text-center py-5">portfolio</h1>
       <div className="container">
         <div className="image-box-wrapper row justify-content-center">
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
-              <img
-                className="portfolio-image"
-                src={netflix}
-                alt="Netflix Clone Project..."
-              />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div
-              className="portfolio-image-box"
-              onClick={openPopupboxCityGuide}
-            >
-              <img
-                className="portfolio-image"
-                src={cityGuide}
-                alt="City Guide Project..."
-              />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div
-              className="portfolio-image-box"
-              onClick={openPopupboxPortfolio}
-            >
-              <img
-                className="portfolio-image"
-                src={portfolio}
-                alt="Portfolio React and Material UI Project..."
-              />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-6 col-sm-6">
-            <div
-              className="portfolio-image-box"
-              onClick={openPopupboxTaskManager}
-            >
-              <img
-                className="portfolio-image"
-                src={taskManager}
-                alt="Task Manager React and Redux Project..."
-              />
-              <div className="overflow"></div>
-              <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-            </div>
-          </div>
+          {projectDetails.map((item) => {
+            return (
+              <div className="col-lg-3 col-md-6 col-sm-6">
+                <div
+                  className="portfolio-image-box"
+                  onClick={openPopupboxNetflix}
+                >
+                  <img
+                    className="portfolio-image"
+                    src={item.images[0]}
+                    alt={item.name}
+                  />
+                  <div className="overflow"></div>
+                  <FontAwesomeIcon
+                    className="portfolio-icon"
+                    icon={faSearchPlus}
+                  />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
       <PopupboxContainer {...popupboxConfigNetflix} />

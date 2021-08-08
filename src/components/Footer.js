@@ -87,14 +87,12 @@ const Footer = () => {
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
               <FacebookShareButton
-                url={"javascript:void(0)"}
                 quote={"FullStack Developer"}
                 hashtag="#javascript"
               >
                 <FacebookIcon className="mx-3" size={36} />
               </FacebookShareButton>
               <TwitterShareButton
-                url={"javascript:void(0)"}
                 quote={"FullStack Developer"}
                 hashtag="#javascript"
               >
