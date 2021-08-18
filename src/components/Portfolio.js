@@ -1,8 +1,6 @@
 import React from "react";
 import netflix from "../assets/images/netflix.png";
-import cityGuide from "../assets/images/city-guide-app.png";
-import portfolio from "../assets/images/portfolio.png";
-import taskManager from "../assets/images/task-manager.png";
+
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -21,11 +19,11 @@ const Portfolio = () => {
       githubLink: "",
       client: "MHK CareProminence",
       images: [
-        require("../assets/images/project/LAT/img1.jpg"),
-        "../assets/images/project/LAT/img2.jpg",
-        "../assets/images/project/LAT/img3.jpg",
-        "../assets/images/project/LAT/img4.jpg",
-        "../assets/images/project/LAT/img5.jpg",
+        `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img1.jpg`,
+        `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img2.jpg`,
+        `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img3.jpg`,
+        `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img4.jpg`,
+        `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img5.jpg`,
       ],
     },
     {
@@ -37,14 +35,15 @@ const Portfolio = () => {
       githubLink: "",
       client: "MHK CareProminence",
       images: [
-        "../assets/images/project/LAT/img1.jpg",
-        "../assets/images/project/LAT/img2.jpg",
-        "../assets/images/project/LAT/img3.jpg",
-        "../assets/images/project/LAT/img4.jpg",
-        "../assets/images/project/LAT/img5.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img1.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img2.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img3.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img4.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img5.jpg",
       ],
     },
   ];
+  console.log(process?.env?.SERVER_NAME);
   // Netflix
   const openPopupboxNetflix = () => {
     const content = (
@@ -82,170 +81,14 @@ const Portfolio = () => {
     fadeInSpeed: 500,
   };
 
-  // City Guide App
-  const openPopupboxCityGuide = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={cityGuide}
-          alt="City Guide App Project..."
-        />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
-        <b>Demo:</b>{" "}
-        <a
-          href
-          className="hyper-link"
-          onClick={() =>
-            window.open(
-              "https://city-guide-app-project.herokuapp.com/",
-              "_blank"
-            )
-          }
-        >
-          https://city-guide-app-project.herokuapp.com/
-        </a>
-        <br />
-        <b>GitHub:</b>{" "}
-        <a
-          href
-          className="hyper-link"
-          onClick={() =>
-            window.open(
-              "https://github.com/8020Coding/city-guide-app",
-              "_blank"
-            )
-          }
-        >
-          https://github.com/8020Coding/city-guide-app
-        </a>
-      </>
-    );
-    PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigCityGuide = {
-    titleBar: {
-      enable: true,
-      text: "City Guide App project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-
-  // Portfolio Project
-  const openPopupboxPortfolio = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={portfolio}
-          alt="Portfolio Project..."
-        />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
-        <b>Demo:</b>{" "}
-        <a
-          href
-          className="hyper-link"
-          onClick={() =>
-            window.open(
-              "https://portfolio-rea-and-material-ui.herokuapp.com/",
-              "_blank"
-            )
-          }
-        >
-          https://portfolio-rea-and-material-ui.herokuapp.com/
-        </a>
-        <br />
-        <b>GitHub:</b>{" "}
-        <a
-          href
-          className="hyper-link"
-          onClick={() =>
-            window.open("https://github.com/8020Coding/portfilio", "_blank")
-          }
-        >
-          https://github.com/8020Coding/portfilio
-        </a>
-      </>
-    );
-    PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigPortfolio = {
-    titleBar: {
-      enable: true,
-      text: "Poftfolio React and Material UI project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-
-  // Task Manager React and Redux Project
-  const openPopupboxTaskManager = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={taskManager}
-          alt="Task Manager React and Redux Project..."
-        />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
-        <b>Demo:</b>{" "}
-        <a
-          className="hyper-link"
-          href
-          onClick={() =>
-            window.open(
-              "https://react-redux-task-manager.herokuapp.com/",
-              "_blank"
-            )
-          }
-        >
-          https://react-redux-task-manager.herokuapp.com/
-        </a>
-        <br />
-        <b>GitHub:</b>{" "}
-        <a
-          href
-          className="hyper-link"
-          onClick={() =>
-            window.open("https://github.com/8020Coding/task-manager", "_blank")
-          }
-        >
-          https://github.com/8020Coding/task-manager
-        </a>
-      </>
-    );
-    PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigTaskManager = {
-    titleBar: {
-      enable: true,
-      text: "Task Manager React and Redux project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-
   return (
     <div id="portfolio" className="portfolio-wrapper">
       <h1 className="text-uppercase text-center py-5">portfolio</h1>
       <div className="container">
         <div className="image-box-wrapper row justify-content-center">
-          {projectDetails.map((item) => {
+          {projectDetails.map((item, index) => {
             return (
-              <div className="col-lg-3 col-md-6 col-sm-6">
+              <div className="col-lg-3 col-md-6 col-sm-6" key={index}>
                 <div
                   className="portfolio-image-box"
                   onClick={openPopupboxNetflix}
@@ -267,9 +110,6 @@ const Portfolio = () => {
         </div>
       </div>
       <PopupboxContainer {...popupboxConfigNetflix} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
-      <PopupboxContainer {...popupboxConfigPortfolio} />
-      <PopupboxContainer {...popupboxConfigTaskManager} />
     </div>
   );
 };

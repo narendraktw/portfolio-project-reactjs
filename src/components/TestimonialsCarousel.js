@@ -14,14 +14,14 @@ const TestimonialsCarousel = (props) => {
       autoPlay={true}
       interval={3000}
     >
-      {data.map((item) => (
-        <>
+      {data.map((item, index) => (
+        <div key={index}>
           <img src={item.img} alt={item.img} />
           <div className="myCarousel">
             <h3>{item.name}</h3>
             <p>{item.Description}</p>
           </div>
-        </>
+        </div>
       ))}
     </Carousel>
   );
