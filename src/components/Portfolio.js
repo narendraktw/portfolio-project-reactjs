@@ -1,17 +1,21 @@
-import React from "react";
-import netflix from "../assets/images/netflix.png";
+import React, { useState } from "react";
 
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 // REACT POPUPBOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
+import ProjectDetailsModal from "./ProjectDetailsModal";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
+  const [projectData, setProjectData] = useState({});
+  const [open, setOpen] = useState(false);
+
   const projectDetails = [
     {
       name: "Letter Automation Tool (LAT)",
+      startDate: "2020",
       description:
         "The Letter Automation Tool (LAT) will serve as MHK’s formal method of receiving delivery of a client’s letter templates inventory, the tool will also auto tag the imported documents and hyper-automate correspondence configuration.  This streamline approach will save time through the reduction of manual analysis and improve quality through the reduction of configuration errors.",
       technology: "ReactJs, Redux, ES6, HTML5, Material UI, Sass",
@@ -27,10 +31,10 @@ const Portfolio = () => {
       ],
     },
     {
-      name: "MHK Care Prominence Configuration Management Tool",
+      name: "MHK Configuration Management Tool",
+      startDate: "2020",
       description:
-        "The Letter Automation Tool (LAT) will serve as MHK’s formal method of receiving delivery of a client’s letter templates inventory, the tool will also auto tag the imported documents and hyper-automate correspondence configuration.  This streamline approach will save time through the reduction of manual analysis and improve quality through the reduction of configuration errors.",
-      technology: "ReactJs, Redux, ES6, HTML5, Material UI, Sass",
+        "The purpose of the Configuration Management Tool (CMT) is to simplify the process of gathering business requirements, configuring, and implementing those requirements into individual MHK Care Prominence client solutions. The tool will allow MHK Care Prominence product team to define and build Solution specific, out of the Box (OOB) configuration settings, along with storing previous versions. The CMT Tool will allow access to MHK Care Prominence clients to enter their specific business requirements and make changes to the predefined settings that align with their business needs",
       demoLink: "",
       githubLink: "",
       client: "MHK CareProminence",
@@ -43,73 +47,69 @@ const Portfolio = () => {
       ],
     },
   ];
-  console.log(process?.env?.SERVER_NAME);
-  // Netflix
-  const openPopupboxNetflix = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={netflix}
-          alt="Netflix Clone Project..."
-        />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
-        <b>GitHub:</b>{" "}
-        <a
-          href
-          className="hyper-link"
-          onClick={() =>
-            window.open("https://github.com/8020Coding/netflix-project")
-          }
-        >
-          https://github.com/8020Coding/netflix-project
-        </a>
-      </>
-    );
-    PopupboxManager.open({ content });
+
+  let detailsModalShow = (data) => {
+    setOpen(true);
+    setProjectData(data);
   };
 
-  const popupboxConfigNetflix = {
-    titleBar: {
-      enable: true,
-      text: "Netflix clone project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
+  let detailsModalClose = () => setOpen(false);
 
   return (
     <div id="portfolio" className="portfolio-wrapper">
       <h1 className="text-uppercase text-center py-5">portfolio</h1>
       <div className="container">
-        <div className="image-box-wrapper row justify-content-center">
-          {projectDetails.map((item, index) => {
-            return (
-              <div className="col-lg-3 col-md-6 col-sm-6" key={index}>
-                <div
-                  className="portfolio-image-box"
-                  onClick={openPopupboxNetflix}
-                >
-                  <img
-                    className="portfolio-image"
-                    src={item.images[0]}
-                    alt={item.name}
-                  />
-                  <div className="overflow"></div>
-                  <FontAwesomeIcon
-                    className="portfolio-icon"
-                    icon={faSearchPlus}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <section id="portfolio">
+          <div className="col-md-12 mx-auto">
+            <div className="row mx-auto">
+              {projectDetails?.map((projects, index) => {
+                return (
+                  <div
+                    className="col-sm-12 col-md-6 col-lg-6"
+                    key={projects.name}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <span className="portfolio-item d-block">
+                      <div
+                        className="foto"
+                        onClick={() => detailsModalShow(projects)}
+                      >
+                        <div>
+                          <img
+                            src={projects.images[0]}
+                            alt="projectImages"
+                            width="500"
+                            height="300"
+                            style={{
+                              marginBottom: 0,
+                              paddingBottom: 0,
+                              position: "relative",
+                            }}
+                          />
+                          <span className="project-date">
+                            {projects.startDate}
+                          </span>
+                          <br />
+                          <h5 className="project-title-settings">
+                            {projects.name}
+                          </h5>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          {open && (
+            <ProjectDetailsModal
+              show={open}
+              onHide={detailsModalClose}
+              data={projectData}
+            />
+          )}
+        </section>
       </div>
-      <PopupboxContainer {...popupboxConfigNetflix} />
     </div>
   );
 };

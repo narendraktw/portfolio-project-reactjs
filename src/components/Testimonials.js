@@ -6,21 +6,21 @@ import avatar3 from "../assets/images/avatars/avatar-3.png";
 const Testimonials = () => {
   const Testimonials = [
     {
-      name: "John Doe 1",
+      name: "Chay Levell - MHK",
       Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!",
+        "The amount of effort that you put into the CMT & LAT project to complete it was tremendous. The energy levels and the sincerity which was displayed were exemplary. This has set up higher standards in front of our organization.",
       img: avatar1,
     },
     {
-      name: "Peter Jofriet",
+      name: "David Bertin - Honeywell",
       Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!",
+        "Thank you so much for the time spent to fix Quota Deployment tool after working hours. Very grateful for the help and support provided here with no notice. Thanks again.",
       img: avatar2,
     },
     {
-      name: "John Doe 3",
+      name: "Deb Mal - Honeywell",
       Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!",
+        "Contribution to setting up of the Digital Work Place (DWP) Platform through the coding, building and layout of pages amidst tight deadlines is highly commendable. The dedication, hunger for success and team work ethics showed by you stands as a testimony to the 12 behaviors of Honeywell and you have truly strived above and beyond to get the task accomplished within the mentioned time. Resources like you make Honeywell a truly successful company.",
       img: avatar3,
     },
   ];

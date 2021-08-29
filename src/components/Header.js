@@ -14,7 +14,7 @@ const Header = () => {
             "Web Design",
             "Web Development",
             "Full Stack Development",
-            "Data Visualization",
+            "Web Hosting",
           ]}
           typeSpeed={40}
           backSpeed={60}

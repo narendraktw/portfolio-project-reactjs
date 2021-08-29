@@ -16,7 +16,12 @@
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif !important;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
+}
+
+.ptb {
+  padding-top: 3rem !important;
+  padding-bottom: 0rem !important;
 }
 
 /************************ NAVBAR *********************************/
@@ -153,6 +158,11 @@ nav ul li {
 }
 
 /************************ ABOUT ME *********************************/
+.aboutMe {
+  background: var(--primary-light-grey);
+  padding: 0 0 2rem 0;
+}
+
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -346,6 +356,40 @@ nav ul li {
   /* padding: 0 0 2rem 0 !important; */
 }
 
+.foto div {
+  background: #fff;
+  display: inline-block;
+  margin: 0 auto 5%;
+  padding: 10px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+.foto img {
+  display: block;
+  width: 100%;
+}
+
+.project-date {
+  font-size: 14px;
+  padding: 8px 15px 2px;
+  position: relative;
+  z-index: -1;
+  border-top: 5px solid #696969;
+  border-radius: 0 0 5px 5px;
+  background-color: #696969;
+  color: #fff;
+}
+
+.project-title-settings {
+  text-align: center;
+  color: #616161;
+  padding-top: 10px;
+}
+
 /*------------ OVERFLOW BOX ------------------*/
 .overflow {
   position: absolute;
@@ -449,15 +493,13 @@ nav ul li {
 .myCarousel {
   color: var(--primary-white);
   background: transparent;
-  margin-top: -6%;
-  width: 54%;
+  margin-top: -4%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
-  padding-bottom: 8%;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: 17.875rem;
+  padding-bottom: 6%;
+  height: 17rem;
 }
 
 .myCarousel h3 {

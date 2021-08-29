@@ -31,7 +31,7 @@ const Contacts = () => {
       .send(serviceID, templateID, variables, userID)
       .then(() => {
         setSuccessMessage(
-          "Form sent successfully! I'll contact you as soon as possible."
+          "Your details sent successfully! I'll contact you as soon as possible."
         );
       })
       .catch((err) => console.error(`Something went wrong ${err}`));
