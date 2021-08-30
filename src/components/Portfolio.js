@@ -37,7 +37,7 @@ const Portfolio = () => {
       images: [
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img1.jpg",
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img2.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img4.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img3.jpg",
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img5.jpg",
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img6.jpg",
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img7.jpg",
