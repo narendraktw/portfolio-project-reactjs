@@ -8,7 +8,7 @@ const Portfolio = () => {
   const projectDetails = [
     {
       name: "Letter Automation Tool (LAT)",
-      startDate: "2020",
+      startDate: "2021",
       description:
         "The Letter Automation Tool (LAT) will serve as MHK’s formal method of receiving delivery of a client’s letter templates inventory, the tool will also auto tag the imported documents and hyper-automate correspondence configuration.  This streamline approach will save time through the reduction of manual analysis and improve quality through the reduction of configuration errors.",
       technology: "ReactJs, Redux, ES6, HTML5, Material UI, Sass",
@@ -82,6 +82,60 @@ const Portfolio = () => {
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img12.jpg",
       ],
     },
+
+    {
+      name: "Quota Deployment Tool",
+      startDate: "2017",
+      description:
+        "This tool is used to deploy yearly quota for Honeywell Process Solution business on different level.",
+      technology: ":  ReactJs, Asp.net, ES6, HTML5, Bootstrap, SQL Server",
+      demoLink: "",
+      githubLink: "",
+      client: "Honeywell CORP",
+      images: [
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/QDT/img1.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/QDT/img2.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/QDT/img3.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/QDT/img4.jpg",
+      ],
+    },
+
+    {
+      name: "Digital Workspace(DWP)",
+      startDate: "2016",
+      description:
+        "This is an internal site for all Honeywell employees to get all the services of Honeywell.",
+      technology:
+        "SharePoint online, JavaScript, jQuery, HTML5, Bootstrap, CSS3",
+      demoLink: "",
+      githubLink: "",
+      client: "Honeywell CORP",
+      images: [
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img1.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img2.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img3.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img4.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img5.jpg",
+      ],
+    },
+
+    {
+      name: "HSM City",
+      startDate: "2011",
+      description:
+        "The objective of this site is to provide the information about the products of Honeywell Scanning and Mobility business. This site is multilingual and more than sixty partners of Honeywell. I migrated from Sitecore to the .net, and we generated 2-million-dollar profit from this project.",
+      technology: "Asp.net, JavaScript, jQuery, HTML5, CSS3",
+      demoLink: "",
+      githubLink: "",
+      client: "Honeywell HSM",
+      images: [
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img1.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img2.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img3.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img4.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img5.jpg",
+      ],
+    },
   ];
 
   let detailsModalShow = (data) => {
@@ -101,7 +155,7 @@ const Portfolio = () => {
               {projectDetails?.map((projects, index) => {
                 return (
                   <div
-                    className="col-sm-12 col-md-6 col-lg-6"
+                    className="col-sm-12 col-md-6 col-lg-4"
                     key={projects.name}
                     style={{ cursor: "pointer" }}
                   >
@@ -114,8 +168,8 @@ const Portfolio = () => {
                           <img
                             src={projects.images[0]}
                             alt="projectImages"
-                            width="400"
-                            height="300"
+                            // width="400"
+                            // height="300"
                             style={{
                               marginBottom: 0,
                               paddingBottom: 0,
@@ -127,9 +181,9 @@ const Portfolio = () => {
                             {projects.startDate}
                           </span>
                           <br />
-                          <h5 className="project-title-settings">
+                          <h6 className="project-title-settings">
                             {projects.name}
-                          </h5>
+                          </h6>
                         </div>
                       </div>
                     </span>

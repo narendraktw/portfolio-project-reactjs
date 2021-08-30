@@ -1,7 +1,7 @@
 $root-element: "awssld";
 $cos45: 0.7071;
 $transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
-$slider-height-percentage: 56%;
+$slider-height-percentage: 55%;
 $slider-transition-duration: 575ms;
 $organic-arrow-color: #d7caaa;
 $organic-arrow-thickness: 4px;
@@ -14,8 +14,8 @@ $control-button-hover-opacity: 0.75;
 $control-button-background: transparent;
 $loader-bar-color: #bfaa76;
 $loader-bar-height: 6px;
-$control-bullet-color: #d7caaa;
-$control-bullet-active-color: #d7caaa;
+$control-bullet-color: #919191;
+$control-bullet-active-color: #4f4f4f;
 $content-background-color: #d7caaa;
 
 %fill-parent {
