@@ -15,9 +15,9 @@
   --primary-header-grey: #212529;
 }
 
-body {
+/* body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif !important;
-}
+} */
 
 .ptb {
   padding-top: 3rem !important;
@@ -388,6 +388,15 @@ nav ul li {
   text-align: center;
   color: #616161;
   padding-top: 10px;
+}
+.modal-description {
+  text-align: justify;
+  padding: 5px 5px 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.close {
+  border: none;
 }
 
 /*------------ OVERFLOW BOX ------------------*/

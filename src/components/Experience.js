@@ -40,7 +40,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-
+        {/* - */}
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
@@ -74,7 +74,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-
+        {/* - */}
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">

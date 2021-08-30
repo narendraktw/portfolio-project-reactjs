@@ -12,7 +12,7 @@ const TestimonialsCarousel = (props) => {
       showThumbs={false}
       showStatus={false}
       autoPlay={true}
-      interval={3000}
+      interval={4000}
     >
       {data.map((item, index) => (
         <div key={index}>

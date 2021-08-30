@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-
-// FONTAWESOME IMPORTS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
-// REACT POPUPBOX
-import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import ProjectDetailsModal from "./ProjectDetailsModal";
-import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
   const [projectData, setProjectData] = useState({});
@@ -24,7 +17,6 @@ const Portfolio = () => {
       client: "MHK CareProminence",
       images: [
         `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img1.jpg`,
-        `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img2.jpg`,
         `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img3.jpg`,
         `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img4.jpg`,
         `https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img5.jpg`,
@@ -39,11 +31,8 @@ const Portfolio = () => {
       githubLink: "",
       client: "MHK CareProminence",
       images: [
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img1.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/CMT/img1.jpg",
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img2.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img3.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img4.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LAT/img5.jpg",
       ],
     },
   ];
@@ -78,12 +67,13 @@ const Portfolio = () => {
                           <img
                             src={projects.images[0]}
                             alt="projectImages"
-                            width="500"
+                            width="400"
                             height="300"
                             style={{
                               marginBottom: 0,
                               paddingBottom: 0,
                               position: "relative",
+                              border: "1px solid #e9e9e9",
                             }}
                           />
                           <span className="project-date">

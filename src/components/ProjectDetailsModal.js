@@ -1,8 +1,8 @@
 import React from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
-import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
+
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 
 const ProjectDetailsModal = (props) => {
@@ -25,7 +25,7 @@ const ProjectDetailsModal = (props) => {
         {/* <h4>Centered Modal</h4> */}
 
         <div className="col-md-12">
-          <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
+          <div className="col-md-12 mx-auto" style={{ paddingBottom: "50px" }}>
             <div className="slider-tab">
               <span
                 className="iconify slider-iconfiy"
@@ -47,7 +47,7 @@ const ProjectDetailsModal = (props) => {
               ></span>
             </div>
             <AwesomeSlider
-              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+              cssModule={[AwesomeSliderStyles]}
               animation="scaleOutAnimation"
               className="slider-image"
             >
@@ -56,7 +56,7 @@ const ProjectDetailsModal = (props) => {
               })}
             </AwesomeSlider>
           </div>
-          <div className="col-md-10 mx-auto">
+          <div className="col-md-12 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
               {data.title}
               {data.url ? (
@@ -73,7 +73,17 @@ const ProjectDetailsModal = (props) => {
                 </a>
               ) : null}
             </h3>
-            <p className="modal-description">{data.description}</p>
+            <p className="modal-description">
+              <b>
+                <h6>Project Description:</h6>
+              </b>
+              {data.description}
+
+              <b>
+                <h6 style={{ paddingTop: "10px" }}>Technologies:</h6>
+              </b>
+              {data.technology}
+            </p>
           </div>
         </div>
       </Modal.Body>

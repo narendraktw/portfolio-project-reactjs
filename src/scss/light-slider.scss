@@ -1,7 +1,7 @@
 $root-element: "awssld";
 $cos45: 0.7071;
 $transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
-$slider-height-percentage: 0%;
+$slider-height-percentage: 45%;
 $slider-transition-duration: 575ms;
 $organic-arrow-color: #d7caaa;
 $organic-arrow-thickness: 4px;
@@ -84,7 +84,7 @@ $content-background-color: #d7caaa;
     padding-bottom: var(--slider-height-percentage);
 
     @media all and (max-width: 500px) {
-      padding-bottom: calc(var(--slider-height-percentage) * 0.25);
+      padding-bottom: calc(var(--slider-height-percentage) * 1.25);
     }
 
     figure {
@@ -111,7 +111,7 @@ $content-background-color: #d7caaa;
   }
   &__content {
     @extend %fill-parent;
-    background-color: var(--content-background-color);
+    // background-color: var(--content-background-color);
     overflow: hidden;
     display: flex;
     align-items: center;
