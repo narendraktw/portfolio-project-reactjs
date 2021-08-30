@@ -45,10 +45,31 @@ const Portfolio = () => {
         "Asp.net, ReactJs, Redux, JEST, Enzyme, ES6, HTML5, Bootstrap, AWS SQL Database, Tableau 10.3, Wordsmith",
       demoLink: "",
       githubLink: "",
-      client: "MHK CareProminence",
+      client: "Honeywell CORP",
       images: [
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img1.jpg",
         "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img2.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img3.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img4.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img5.jpg",
+      ],
+    },
+    {
+      name: "Customer Marketing Learning Portal",
+      startDate: "2018",
+      description:
+        "This portal is designed as a gateway to facilitate trainings on different platforms which can be accessed both on mobile and desktop devices. All data (Learning done by employees with different platforms) will be uploaded in this portal which generates auto reports, dashboard, and badges assignment.",
+      technology:
+        "SharePoint Online, SharePoint designer workflow, ReactJs, JEST, Enzyme, ES6, Highchart.js, HTML5, Bootstrap, CSS3",
+      demoLink: "",
+      githubLink: "",
+      client: "Honeywell CORP",
+      images: [
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img1.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img2.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img3.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img4.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LPFES/img5.jpg",
       ],
     },
   ];
