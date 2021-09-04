@@ -673,3 +673,25 @@ textarea.form-control {
 .footer p {
   margin-bottom: 0;
 }
+
+.footer div.buttonFix > a {
+  margin-left: 35px;
+}
+
+.footer div.buttonFix > a:hover {
+  background: #231f20 !important;
+  color: #fff !important;
+}
+
+/* .MuiSvgIcon-root:hover {
+  background-color: #3b5998 !important;
+  color: #fff !important;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.6s;
+  border-radius: 18px;
+  width: 41px;
+  height: 41px;
+} */

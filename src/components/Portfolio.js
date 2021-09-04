@@ -98,7 +98,8 @@ const Portfolio = () => {
       startDate: "2017",
       description:
         "This tool is used to deploy yearly quota for Honeywell Process Solution business on different level.",
-      technology: ":  ReactJs, Asp.net, ES6, HTML5, Bootstrap, SQL Server",
+      technology:
+        "SharePoint Online, SP Services, ReactJs, AgilePoint, ES6, HTML5, CSS3",
       demoLink: "",
       githubLink: "",
       client: "Honeywell CORP",
@@ -139,11 +140,9 @@ const Portfolio = () => {
       githubLink: "",
       client: "Honeywell HSM",
       images: [
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img1.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img2.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img3.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img4.jpg",
-        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/LearningPortal/img5.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/HSMCity/img1.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/HSMCity/img2.jpg",
+        "https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/HSMCity/img3.jpg",
       ],
     },
   ];
