@@ -26,7 +26,7 @@ const AboutMe = () => {
               written communications skills.
               <br />
               <b>Technologies/Skills:</b> ReactJs, Redux, Javascript,
-              NodeJs(Rest APIs), ASP.net, ES6, HTML5, Material UI, Sass, CSS3,
+              NodeJs(Rest APIs), ASP.net, ES6+, HTML5, Material UI, Sass, CSS3,
               Bootstrap, Sharepoint, Nintex Workflow, Tableau, SQL Server &
               MongoDB.
             </p>
