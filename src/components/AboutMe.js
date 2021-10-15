@@ -13,8 +13,8 @@ const AboutMe = () => {
           <div className="col-lg-6 col-xm-12">
             <h1 className="about-heading">about me</h1>
             <p>
-              Hello! I am Narendra Bisht. Result-driven Full Stack lead with 10
-              years of extensive experience in developing full-stack web
+              Hello! I am Narendra Bisht. Result-driven Full Stack Software
+              Developer with 10 years of extensive experience in developing web
               applications and cross-platform mobile apps using cutting-edge
               open-source libraries and frameworks. Proficient in spearheading
               full software development life cycle – from idea through the
