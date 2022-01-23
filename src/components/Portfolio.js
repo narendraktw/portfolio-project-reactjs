@@ -17,8 +17,8 @@ const Portfolio = () => {
 			githubLink: '',
 			client: 'IHS Markit',
 			images: [
-				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/IHSMarkit/img1.jpg`,
-				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/IHSMarkit/img2.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/IHSMarkit/img1.JPG`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/IHSMarkit/img2.JPG`,
 				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/IHSMarkit/img3.jpg`,
 				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/IHSMarkit/img4.jpg`,
 				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/IHSMarkit/img5.jpg`,
