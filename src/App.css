@@ -371,6 +371,7 @@ nav ul li {
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
+  height: 280px;
 }
 
 .foto div:hover {
