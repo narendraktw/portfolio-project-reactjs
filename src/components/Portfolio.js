@@ -7,6 +7,27 @@ const Portfolio = () => {
 
 	const projectDetails = [
 		{
+			name: 'Auto/Umbrella Policy Modernization',
+			startDate: '2022',
+			description:
+				'The purpose of this project is to modernization of the existing umbrella policy. So, they have Personal Lines Product division under they have auto policy, homeowners’ policy, water craft policy and umbrella policy.  ',
+			technology:
+				'ReactJs, Redux, Mirage.js, Micro Frontend, ES6+, HTML5, Reveille DLS, Git Lab',
+			demoLink: 'https://www.usaa.com/?akredirect=true',
+			githubLink: '',
+			client: 'IHS Markit',
+			images: [
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img1.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img2.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img3.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img4.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img5.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img6.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img7.jpg`,
+				`https://raw.githubusercontent.com/narendraktw/portfolio-project-reactjs/main/src/assets/images/project/UmbPolicyMod/img8.jpg`,
+			],
+		},
+		{
 			name: 'Daily Sales Dashboard (IHS Markit)',
 			startDate: '2021',
 			description:

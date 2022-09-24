@@ -530,6 +530,7 @@ nav ul li {
 
 .myCarousel p {
   color: var(--primary-grey);
+  text-align: left;
 }
 
 .carousel .slide img {

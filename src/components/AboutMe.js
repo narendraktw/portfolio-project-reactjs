@@ -1,5 +1,5 @@
-import React from "react";
-import author from "../assets/images/myPic.png";
+import React from 'react';
+import author from '../assets/images/myPic.png';
 const AboutMe = () => {
 	return (
 		<div id="about" className="aboutMe ptb">
@@ -27,9 +27,9 @@ const AboutMe = () => {
 							written communications skills.
 							<br />
 							<b>Technologies/Skills:</b> ReactJs, Redux, JavaScript,
-							NodeJs(Rest APIs), ASP.net, ES6+, HTML5, Material UI, Sass, CSS3,
-							Bootstrap, AWS Cloud, Sharepoint Online, Nintex Workflow, Tableau,
-							SQL Server & MongoDB.
+							TypeScript, NodeJs(Rest APIs), ES6+, HTML5, Material UI, Sass,
+							CSS3, Bootstrap, AWS Cloud, ASP.net, Sharepoint Online, Nintex
+							Workflow, Tableau, SQL Server & MongoDB.
 						</p>
 					</div>
 				</div>
